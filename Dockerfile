@@ -1,9 +1,9 @@
 FROM caddy:builder AS builder
 
-RUN xcaddy \
-  --with github.com/caddy-dns/ionos
+RUN caddy-builder \
+  github.com/caddy-dns/ionos
 
-FROM caddy:latest
+FROM caddy:alpine
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 
