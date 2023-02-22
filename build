@@ -7,3 +7,6 @@ fi
 
 docker build -t caddy-ionos-dns:$1 https://github.com/MrOnak/caddy-dns-ionos.git
 
+# add tags for docker hub
+docker image tag caddy-ionos-dns:$1 "anoikisnomads/caddy-ionos-dns:$1"
+docker image tag caddy-ionos-dns:$1 "anoikisnomads/caddy-ionos-dns:latest"
