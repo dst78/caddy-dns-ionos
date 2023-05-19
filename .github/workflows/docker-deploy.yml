@@ -47,8 +47,8 @@ jobs:
           tags: | 
             ${{ secrets.DOCKERHUB_USERNAME }}/caddy-ionos-dns:latest
             ${{ secrets.DOCKERHUB_USERNAME }}/caddy-ionos-dns:${{ github.ref_name }}
-            quay.io/${{ secrets.QUAY_USERNAME }}/caddy-ionos-dns:latest
-            quay.io/${{ secrets.QUAY_USERNAME }}/caddy-ionos-dns:${{ github.ref_name }}
+            quay.io/${{ secrets.QUAY_ACCOUNTNAME }}/caddy-ionos-dns:latest
+            quay.io/${{ secrets.QUAY_ACCOUNTNAME }}/caddy-ionos-dns:${{ github.ref_name }}
             ghcr.io/dst78/caddy-ionos-dns:latest
             ghcr.io/dst78/caddy-ionos-dns:${{ github.ref_name }}
 
