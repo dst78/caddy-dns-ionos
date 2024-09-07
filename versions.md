@@ -1,3 +1,4 @@
 - caddy:builder 2.8.4
 - caddy:alpine 2.8.4
-- caddy-dns-ionos 1.0.1
+- caddy-dns-ionos 1.1.0
+
